@@ -3,6 +3,6 @@
  * @param {Array} array - 要处理的数组
  * @returns {Array} - 新数组
  */
-export function compact<T>(array: T[]): T[] {
+export default function compact<T>(array: T[]): T[] {
   return array.filter(Boolean);
 }

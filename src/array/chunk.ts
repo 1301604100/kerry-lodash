@@ -4,9 +4,7 @@
  * @param {number} size - 每个数组区块的长度
  * @returns {Array} - 拆分后的数组
  */
-export function chunk<T>(array: T[], size: number = 1): T[][] {
-  if (!Array.isArray(array)) throw new Error("array is not an array");
-
+export default function chunk<T>(array: T[], size: number = 1): T[][] {
   const res: T[][] = [];
   for (let i = 0; i < array.length; i += size) {
     res.push(array.slice(i, i + size));
